@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import NewCard from './NewCard'
+import NewsCard from './NewsCard'
 
 export default function NewsPage(): JSX.Element {
     return (
@@ -9,13 +9,13 @@ export default function NewsPage(): JSX.Element {
             <div className="container">
                 <div className="news-page">
                     <h1 className="title news-page__title">News</h1>
-                    <NewCard />
-                    <NewCard />
-                    <NewCard />
-                    <NewCard />
-                    <NewCard />
-                    <NewCard />
-                    <NewCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
                 </div>
             </div>
 

@@ -37,7 +37,7 @@ export default function LoginPage(): JSX.Element {
             localStorage.setItem('isAuthorized', 'true')
             navigate('/profile')
         } else {
-            toast.error('Такоего пользователя не существует')
+            toast.error('Имя пользователя или пароль введены не верно')
         }
     }
 
