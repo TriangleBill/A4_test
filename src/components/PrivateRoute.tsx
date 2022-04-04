@@ -8,12 +8,9 @@ type PrivateRouteProps = {
 export default function PrivateRoute(props: PrivateRouteProps): JSX.Element {
     const {Component } = props
 
-    let authorizationStatus: boolean | null = false
+    const authorizationStatus: string | null = localStorage.getItem('isAuthorized')
 
-    useEffect(() => {
-        authorizationStatus = Boolean(localStorage.getItem('isAuthorized'))
-    }, [localStorage])
 
-    return authorizationStatus ? <Component /> : <Navigate to='/login' />
+    return authorizationStatus === 'true' ? <Component /> : <Navigate to='/login' />
 
 }
