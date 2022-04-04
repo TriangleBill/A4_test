@@ -7,7 +7,7 @@
   text-align: justify;
 }
 
-.main-page__title, .news-page__title, .profile-page__title {
+.main-page__title, .news-page__title, .profile-page__title, .login-page__title {
   margin-top: 3rem;
 }
 
@@ -21,4 +21,15 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.login-page {
+  font-size: 1.5rem;
+}
+
+.login-page__btn {
+  background-color: rgba(31, 31, 202, 0.493);
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
