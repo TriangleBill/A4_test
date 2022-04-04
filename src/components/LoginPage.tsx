@@ -10,9 +10,7 @@ export default function LoginPage(): JSX.Element {
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
     const users = useAppSelector((state) => state.auth.users)
-
-    console.log(localStorage.getItem('isAuthorized'))
-
+    
     function findUser(users: UserType[], name: string, pass: string) {
         const result = users.map((el) => {
             if (el.username === name && el.password === Number(pass)) return el
