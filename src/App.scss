@@ -5,10 +5,18 @@
 .main-page__text, .profile-page__text {
   margin-top: 5rem;
   text-align: justify;
+
+  @media screen and (max-width: 770px) {
+    margin-top: 2rem;
+  }
 }
 
 .main-page__title, .news-page__title, .profile-page__title, .login-page__title {
   margin-top: 3rem;
+
+  @media screen and (max-width: 770px) {
+    margin-top: 1rem;
+  }
 }
 
 .new-card {
