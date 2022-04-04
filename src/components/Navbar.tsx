@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar(): JSX.Element {
     return (
@@ -7,13 +8,13 @@ export default function Navbar(): JSX.Element {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Главная</a>
+                            <Link className="nav-link text-white" to="/">Главная</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Новости</a>
+                            <Link className="nav-link text-white" to="/news">Новости</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Профиль</a>
+                            <Link className="nav-link text-white" to="/profile">Профиль</Link>
                         </li>
                     </ul>
                 </div>
