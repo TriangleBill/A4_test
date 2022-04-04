@@ -1,3 +1,13 @@
-.app-navbar {
-  color: white;
+.title {
+  text-align: center;
+}
+
+.main-page {
+  &__title {
+    margin-top: 3rem;
+  }
+  &__text {
+    margin-top: 5rem;
+    text-align: justify;
+  }
 }
