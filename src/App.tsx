@@ -5,6 +5,7 @@ import NewsPage from './components/NewsPage';
 import PrivateRoute from './components/PrivateRoute';
 import ProfilePage from './components/ProfilePage';
 import LoginPage from './components/LoginPage';
+import Page404 from './components/Page404';
 
 function App(): JSX.Element {
   return (
@@ -13,6 +14,7 @@ function App(): JSX.Element {
       <Route path='/news' element={<NewsPage />} />
       <Route path='/profile' element={<PrivateRoute Component={ProfilePage} />} />
       <Route path='/login' element={<LoginPage />} />
+      <Route path='*' element={<Page404 />} />
     </Routes>
   );
 }
